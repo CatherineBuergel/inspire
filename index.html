@@ -14,30 +14,38 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body id="bg-image" background="url">
-	<div id="weather">
-		<h4>Today's Weather Report</h4>
-		<h6>${this.name}</h6>
-		<h6>${this.temp}</h6>
-		<p>${this.description}</p>
-		<p>${this.humidity}</p>
+<body class="container-fluid" id="bg-image" background="url">
+	<div class="row">
+		<div class="col-2 offset-10" id="weather">
+			<!--weather goes here-->
+		</div>
 	</div>
 
-	<div id="quote">
-		<p></p>
+	<div class="row">
+		<div class="col" id="clock">
+			<p>clock goes here</p>
+		</div>
 	</div>
 
-	<div>
-		<div id="todo-error"></div>
-		<form onsubmit="app.controllers.todoController.addTodo(event)">
-			<label for="todo-List">What you like to accomplish today?</label>
-			<input type="text" class="form-control" id="description" placeholder="I would like to...">
-			<button class="btn btn-primary" type="submit">Add</button>
-			<small class="form-text text-muted">You got this.</small></form>
-		<div id="todos">
+	<div class="row">
+		<div class="col" id="quote">
+		</div>
+	</div>
+
+	<div class="row mt-5">
+		<div class="col-6" id="form">
+			<form onsubmit="app.controllers.todoController.addTodo(event)">
+				<label for="todo-List">What you like to accomplish today?</label>
+				<input type="text" class="form-control" id="description" placeholder="I would like to...">
+				<button class="btn btn-secondary" type="submit">Add</button>
+				<small class="form-text text-muted">You got this.</small></form>
+		</div>
+
+		<div class="col-6 mt-5" id="todos">
 
 		</div>
 	</div>
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script type="module" src="app/main.js"></script>
@@ -45,3 +53,25 @@
 
 </html>
 <html>
+
+
+
+<!-- <div id="weather">
+
+</div>
+
+<div id="quote">
+	<p></p>
+</div>
+
+<div>
+	<div id="todo-error"></div>
+	<form onsubmit="app.controllers.todoController.addTodo(event)">
+		<label for="todo-List">What you like to accomplish today?</label>
+		<input type="text" class="form-control" id="description" placeholder="I would like to...">
+		<button class="btn btn-primary" type="submit">Add</button>
+		<small class="form-text text-muted">You got this.</small></form>
+	<div id="todos">
+
+	</div>
+</div> -->

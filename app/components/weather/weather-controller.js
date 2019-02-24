@@ -11,7 +11,6 @@ function drawWeather() {
 export default class WeatherController {
 
 	constructor() {
-		debugger
 		_weatherService.addSubscriber('weather', drawWeather)
 		_weatherService.getWeather()
 	}

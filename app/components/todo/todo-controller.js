@@ -5,10 +5,19 @@ const _todoService = new TodoService()
 function _drawTodos() {
 	//WHAT IS MY PURPOSE? 
 	let todos = _todoService.Todos
+	let incomplete = 0
 	let template = ''
+
 	todos.forEach(t => {
+		if (!t.completed) {
+			incomplete++
+		}
 		template += t.getTemplate()
 	})
+
+
+
+	template += `<h4>${incomplete} items left to do</h4>`
 	document.getElementById('todos').innerHTML = template
 
 }
@@ -45,7 +54,6 @@ export default class TodoController {
 
 	removeTodo(todoId) {
 		// ask the service to run the remove todo with this id
-
 		_todoService.removeTodo(todoId)
 	}
 

@@ -9,11 +9,10 @@ export default class Weather {
   }
 
   getTemplate() {
-    return `	<h4>Today's Weather Report</h4>
-		<h6>${this.city}</h6>
-		<h6>${this.temp}</h6>
-		<p>${this.description}</p>
-		<p>${this.humidity}</p>`
+    return `
+    	<h1>${this.city}</h1>
+			<h3>${this.temp} °F</h3>
+			<h5>Today looks like: ${this.description}</h5>`
   }
 
 

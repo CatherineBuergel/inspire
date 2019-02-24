@@ -1,4 +1,44 @@
-#todo-error{
-  color: red;
-  font-size: 2em;
+#bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-shadow: -1px -1px black;
 }
+
+#clock {
+  text-align: center;
+  padding-top: 200px;
+  font-size: 3em;
+  
+}
+
+#quote {
+  text-align: center;
+  font-size: 2em;
+  background-color: black;
+  opacity: .5;
+  height: 10vh;
+}
+
+#weather {
+  background-color: black;
+  opacity: .5;
+  border-bottom-left-radius: 10%;
+}
+
+#form {
+  text-align: center;
+}
+
+#description {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  color: white;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+

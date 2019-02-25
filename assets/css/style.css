@@ -28,8 +28,11 @@
 }
 
 #form {
-  text-align: center;
+  justify-content: start;
+
 }
+
+
 
 #description {
   background-color: transparent;
